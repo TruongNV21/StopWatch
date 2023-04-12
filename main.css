@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:  #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.container{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.watch-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.time-wrapper{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-wrapper span{
+    font-size: 3rem;
+    font-weight: 500;
+    min-width: 80px;
+}
+
+#seconds{
+    text-align: end;
+    padding-right: 4px;
+} 
+#tens{
+    padding-left: 4px;
+}
+
+
+.buttons{
+    margin: 12px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pauseRun .continue{
+    display: inline-block;
+}
+
+.pauseRun .stop{
+    display: none;
+}
+
+.pauseRun.running .continue{
+    display: none;
+}
+
+.pauseRun.running .stop{
+    display: inline-block;
+}
+
+
+button{
+    border: none;
+    padding: 8px 12px;
+    font-size: 1.8rem;
+    background-color: #0066dc;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    min-width: 45px;
+}
